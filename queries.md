@@ -44,6 +44,7 @@ limit: 10
 
 ### 6. All the companies that don't include the `partners` field.
 
+// every single company has partners field, I'm returning the ones where the array is empty
 filter: {partners: { $exists: true, $eq: [] }}
 project: 
 sort:
